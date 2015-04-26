@@ -19,6 +19,10 @@
 		25B859F51AECA09300AB311F /* ZENSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25B859F41AECA09300AB311F /* ZENSettingViewController.m */; };
 		25B859F81AECA25D00AB311F /* ZENStartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25B859F71AECA25D00AB311F /* ZENStartViewController.m */; };
 		25B859FB1AECA4C800AB311F /* ZENMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25B859FA1AECA4C800AB311F /* ZENMainViewController.m */; };
+		651DAAF51AECAC0900F3BF66 /* MEMELib.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 651DAAF31AECAC0900F3BF66 /* MEMELib.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		651DAAFD1AECAC3F00F3BF66 /* ZENData.m in Sources */ = {isa = PBXBuildFile; fileRef = 651DAAF81AECAC3F00F3BF66 /* ZENData.m */; };
+		651DAAFE1AECAC3F00F3BF66 /* ZENDataAnalyzer.m in Sources */ = {isa = PBXBuildFile; fileRef = 651DAAFA1AECAC3F00F3BF66 /* ZENDataAnalyzer.m */; };
+		651DAAFF1AECAC3F00F3BF66 /* ZENDeviceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 651DAAFC1AECAC3F00F3BF66 /* ZENDeviceManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +34,20 @@
 			remoteInfo = MemeMeditation;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		651DAAF61AECAC0A00F3BF66 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				651DAAF51AECAC0900F3BF66 /* MEMELib.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		25B859781AEC877000AB311F /* MemeMeditation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MemeMeditation.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -55,6 +73,13 @@
 		25B859F71AECA25D00AB311F /* ZENStartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZENStartViewController.m; path = Classes/ZENStartViewController.m; sourceTree = "<group>"; };
 		25B859F91AECA4C800AB311F /* ZENMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZENMainViewController.h; path = Classes/ZENMainViewController.h; sourceTree = "<group>"; };
 		25B859FA1AECA4C800AB311F /* ZENMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZENMainViewController.m; path = Classes/ZENMainViewController.m; sourceTree = "<group>"; };
+		651DAAF31AECAC0900F3BF66 /* MEMELib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MEMELib.framework; path = MemeMeditation/Framework/MEMELib.framework; sourceTree = "<group>"; };
+		651DAAF71AECAC3F00F3BF66 /* ZENData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZENData.h; sourceTree = "<group>"; };
+		651DAAF81AECAC3F00F3BF66 /* ZENData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZENData.m; sourceTree = "<group>"; };
+		651DAAF91AECAC3F00F3BF66 /* ZENDataAnalyzer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZENDataAnalyzer.h; sourceTree = "<group>"; };
+		651DAAFA1AECAC3F00F3BF66 /* ZENDataAnalyzer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZENDataAnalyzer.m; sourceTree = "<group>"; };
+		651DAAFB1AECAC3F00F3BF66 /* ZENDeviceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZENDeviceManager.h; sourceTree = "<group>"; };
+		651DAAFC1AECAC3F00F3BF66 /* ZENDeviceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZENDeviceManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +103,7 @@
 		25B8596F1AEC877000AB311F = {
 			isa = PBXGroup;
 			children = (
+				651DAAF31AECAC0900F3BF66 /* MEMELib.framework */,
 				25B8597A1AEC877000AB311F /* MemeMeditation */,
 				25B859941AEC877000AB311F /* MemeMeditationTests */,
 				25B859791AEC877000AB311F /* Products */,
@@ -97,6 +123,12 @@
 		25B8597A1AEC877000AB311F /* MemeMeditation */ = {
 			isa = PBXGroup;
 			children = (
+				651DAAF71AECAC3F00F3BF66 /* ZENData.h */,
+				651DAAF81AECAC3F00F3BF66 /* ZENData.m */,
+				651DAAF91AECAC3F00F3BF66 /* ZENDataAnalyzer.h */,
+				651DAAFA1AECAC3F00F3BF66 /* ZENDataAnalyzer.m */,
+				651DAAFB1AECAC3F00F3BF66 /* ZENDeviceManager.h */,
+				651DAAFC1AECAC3F00F3BF66 /* ZENDeviceManager.m */,
 				25B8597F1AEC877000AB311F /* AppDelegate.h */,
 				25B859801AEC877000AB311F /* AppDelegate.m */,
 				25B859821AEC877000AB311F /* ViewController.h */,
@@ -170,6 +202,7 @@
 				25B859741AEC877000AB311F /* Sources */,
 				25B859751AEC877000AB311F /* Frameworks */,
 				25B859761AEC877000AB311F /* Resources */,
+				651DAAF61AECAC0A00F3BF66 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -262,9 +295,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				25B859EF1AEC93C300AB311F /* ZENTutorialViewController.m in Sources */,
+				651DAAFE1AECAC3F00F3BF66 /* ZENDataAnalyzer.m in Sources */,
 				25B859F81AECA25D00AB311F /* ZENStartViewController.m in Sources */,
 				25B859841AEC877000AB311F /* ViewController.m in Sources */,
+				651DAAFD1AECAC3F00F3BF66 /* ZENData.m in Sources */,
 				25B859811AEC877000AB311F /* AppDelegate.m in Sources */,
+				651DAAFF1AECAC3F00F3BF66 /* ZENDeviceManager.m in Sources */,
 				25B8597E1AEC877000AB311F /* main.m in Sources */,
 				25B859FB1AECA4C800AB311F /* ZENMainViewController.m in Sources */,
 				25B859F21AEC9C7100AB311F /* ZENTutorialPageView.m in Sources */,
@@ -394,6 +430,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MemeMeditation/Framework",
+				);
 				INFOPLIST_FILE = MemeMeditation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -404,6 +444,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MemeMeditation/Framework",
+				);
 				INFOPLIST_FILE = MemeMeditation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
