@@ -14,9 +14,6 @@
 		25B859891AEC877000AB311F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25B859881AEC877000AB311F /* Images.xcassets */; };
 		25B8598C1AEC877000AB311F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25B8598A1AEC877000AB311F /* LaunchScreen.xib */; };
 		25B859981AEC877000AB311F /* MemeMeditationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 25B859971AEC877000AB311F /* MemeMeditationTests.m */; };
-		25B859B11AEC8D9D00AB311F /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 25B859AA1AEC8D9D00AB311F /* SVIndefiniteAnimatedView.m */; };
-		25B859B21AEC8D9D00AB311F /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 25B859AC1AEC8D9D00AB311F /* SVProgressHUD.bundle */; };
-		25B859B31AEC8D9D00AB311F /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 25B859AE1AEC8D9D00AB311F /* SVProgressHUD.m */; };
 		25B859EF1AEC93C300AB311F /* ZENTutorialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25B859EE1AEC93C300AB311F /* ZENTutorialViewController.m */; };
 		25B859F21AEC9C7100AB311F /* ZENTutorialPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 25B859F11AEC9C7100AB311F /* ZENTutorialPageView.m */; };
 		25B859F51AECA09300AB311F /* ZENSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25B859F41AECA09300AB311F /* ZENSettingViewController.m */; };
@@ -48,12 +45,6 @@
 		25B859911AEC877000AB311F /* MemeMeditationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MemeMeditationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		25B859961AEC877000AB311F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		25B859971AEC877000AB311F /* MemeMeditationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MemeMeditationTests.m; sourceTree = "<group>"; };
-		25B859A91AEC8D9D00AB311F /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
-		25B859AA1AEC8D9D00AB311F /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
-		25B859AB1AEC8D9D00AB311F /* SVProgressHUD-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-Prefix.pch"; sourceTree = "<group>"; };
-		25B859AC1AEC8D9D00AB311F /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
-		25B859AD1AEC8D9D00AB311F /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
-		25B859AE1AEC8D9D00AB311F /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
 		25B859ED1AEC93C300AB311F /* ZENTutorialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZENTutorialViewController.h; path = Classes/ZENTutorialViewController.h; sourceTree = "<group>"; };
 		25B859EE1AEC93C300AB311F /* ZENTutorialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZENTutorialViewController.m; path = Classes/ZENTutorialViewController.m; sourceTree = "<group>"; };
 		25B859F01AEC9C7100AB311F /* ZENTutorialPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZENTutorialPageView.h; path = Classes/ZENTutorialPageView.h; sourceTree = "<group>"; };
@@ -90,7 +81,6 @@
 				25B8597A1AEC877000AB311F /* MemeMeditation */,
 				25B859941AEC877000AB311F /* MemeMeditationTests */,
 				25B859791AEC877000AB311F /* Products */,
-				25B859A21AEC8D9D00AB311F /* Dependencies */,
 				25B859A11AEC8C8700AB311F /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -151,27 +141,6 @@
 			children = (
 			);
 			path = Frameworks;
-			sourceTree = "<group>";
-		};
-		25B859A21AEC8D9D00AB311F /* Dependencies */ = {
-			isa = PBXGroup;
-			children = (
-				25B859A81AEC8D9D00AB311F /* SVProgressHUD */,
-			);
-			path = Dependencies;
-			sourceTree = SOURCE_ROOT;
-		};
-		25B859A81AEC8D9D00AB311F /* SVProgressHUD */ = {
-			isa = PBXGroup;
-			children = (
-				25B859A91AEC8D9D00AB311F /* SVIndefiniteAnimatedView.h */,
-				25B859AA1AEC8D9D00AB311F /* SVIndefiniteAnimatedView.m */,
-				25B859AB1AEC8D9D00AB311F /* SVProgressHUD-Prefix.pch */,
-				25B859AC1AEC8D9D00AB311F /* SVProgressHUD.bundle */,
-				25B859AD1AEC8D9D00AB311F /* SVProgressHUD.h */,
-				25B859AE1AEC8D9D00AB311F /* SVProgressHUD.m */,
-			);
-			path = SVProgressHUD;
 			sourceTree = "<group>";
 		};
 		25B859B41AEC8E3400AB311F /* Views */ = {
@@ -275,7 +244,6 @@
 				25B859871AEC877000AB311F /* Main.storyboard in Resources */,
 				25B8598C1AEC877000AB311F /* LaunchScreen.xib in Resources */,
 				25B859891AEC877000AB311F /* Images.xcassets in Resources */,
-				25B859B21AEC8D9D00AB311F /* SVProgressHUD.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,8 +267,6 @@
 				25B859811AEC877000AB311F /* AppDelegate.m in Sources */,
 				25B8597E1AEC877000AB311F /* main.m in Sources */,
 				25B859FB1AECA4C800AB311F /* ZENMainViewController.m in Sources */,
-				25B859B31AEC8D9D00AB311F /* SVProgressHUD.m in Sources */,
-				25B859B11AEC8D9D00AB311F /* SVIndefiniteAnimatedView.m in Sources */,
 				25B859F21AEC9C7100AB311F /* ZENTutorialPageView.m in Sources */,
 				25B859F51AECA09300AB311F /* ZENSettingViewController.m in Sources */,
 			);
@@ -497,6 +463,7 @@
 				25B8599D1AEC877000AB311F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		25B8599E1AEC877000AB311F /* Build configuration list for PBXNativeTarget "MemeMeditationTests" */ = {
 			isa = XCConfigurationList;
@@ -505,6 +472,7 @@
 				25B859A01AEC877000AB311F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
