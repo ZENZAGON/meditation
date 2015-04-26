@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ZENDeviceManager.h"
 
 @interface ZENStartViewController : UIViewController
 

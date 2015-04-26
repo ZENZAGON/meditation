@@ -7,9 +7,11 @@
 //
 
 #import "ZENMainViewController.h"
+#import "ZENDeviceManager.h"
 
-@interface ZENMainViewController ()
+@interface ZENMainViewController () <ZENDeviceObserver>
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
+
 
 @end
 
@@ -18,7 +20,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
+    [ZENDeviceManager getInstance].observer = self;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -28,8 +30,8 @@
 
 - (void)viewDidAppear:(BOOL)animated
 {
-    [self performSelector:@selector(showCountDown3) withObject:nil afterDelay:0.1f];
     
+    [self performSelector:@selector(showCountDown3) withObject:nil afterDelay:0.1f];
 }
 
 
@@ -67,6 +69,7 @@
 {
     self.imageView.image = [UIImage imageNamed:@"10_start"];
     [self performSelector:@selector(showPlaying) withObject:nil afterDelay:1.0f];
+    [[ZENDeviceManager getInstance] ready:3];
 }
 
 
@@ -77,5 +80,11 @@
     
 }
 
+- (void)zenDeviceStatus:(ZENDeviceStatus)status {
+    NSLog(@"zenDeviceStatus status:%d", status);
+    if (status == ZEN_DEVICE_STATUS_RUNNING) {
+        [[ZENDeviceManager getInstance] start];
+    }
+}
 
 @end
